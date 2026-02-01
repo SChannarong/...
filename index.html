@@ -79,16 +79,16 @@
             </header>
 
             <!-- Content Area -->
-            <div class="content-area">
-                <!-- Storage Box 1 -->
-                <section class="storage-section expanded">
-                    <div class="section-header">
-                        <h2 class="section-title">NO.1 Storage box</h2>
-                        <div class="section-actions">
-                            <button class="action-btn">
+            <div class="content-area home-layout">
+                <!-- Sensor 1 Section -->
+                <section class="sensor-box">
+                    <div class="sensor-header">
+                        <h2 class="sensor-title">SENSOR NO.1 Local Name</h2>
+                        <div class="sensor-actions">
+                            <button class="icon-btn">
                                 <i class="fas fa-filter"></i>
                             </button>
-                            <button class="action-btn active">
+                            <button class="icon-btn expand-btn active">
                                 <i class="fas fa-chevron-down"></i>
                             </button>
                         </div>
@@ -98,211 +98,202 @@
                     <div class="status-tags">
                         <span class="tag normal">Normal <b>25</b></span>
                         <span class="tag testing">Testing <b>7</b></span>
-                        <span class="tag lent">Lent <b>5</b></span>
+                        <span class="tag lent">Lent <b>3</b></span>
                         <span class="tag damage">Damage <b>3</b></span>
                         <span class="tag loss">Loss <b>2</b></span>
                         <span class="tag scrap">Scrap <b>4</b></span>
                     </div>
 
-                    <!-- Stats Row -->
-                    <div class="stats-row">
-                        <div class="stats-card">
-                            <div class="stat-item">
+                    <!-- Stats and Controls Row -->
+                    <div class="stats-controls-row">
+                        <div class="stats-grid">
+                            <div class="stat-box">
                                 <span class="stat-label">Total</span>
-                                <span class="stat-value">40</span>
+                                <span class="stat-value total">40</span>
                             </div>
-                            <div class="stat-item">
-                                <span class="stat-label">Delay</span>
+                            <div class="stat-box">
+                                <span class="stat-label">Defay</span>
                                 <span class="stat-value delay">7</span>
                             </div>
-                            <div class="stat-item">
+                            <div class="stat-box">
                                 <span class="stat-label">Detection</span>
                                 <span class="stat-value detection">3</span>
                             </div>
-                            <div class="stat-item">
+                            <div class="stat-box">
                                 <span class="stat-label">Scrap</span>
                                 <span class="stat-value scrap-val">5</span>
                             </div>
                         </div>
 
-                        <div class="env-card">
-                            <i class="fas fa-tint"></i>
-                            <span>30%</span>
+                        <div class="env-indicators">
+                            <div class="env-circle">
+                                <i class="fas fa-tint"></i>
+                                <span>30%</span>
+                            </div>
+                            <div class="env-circle">
+                                <i class="fas fa-thermometer-half"></i>
+                                <span>28°C</span>
+                            </div>
                         </div>
 
-                        <div class="env-card">
-                            <i class="fas fa-thermometer-half"></i>
-                            <span>28°C</span>
-                        </div>
-
-                        <div class="control-buttons">
-                            <button class="control-btn door active">
-                                <div class="btn-icon">
-                                    <i class="fas fa-door-open"></i>
-                                </div>
-                                <div class="btn-info">
-                                    <span class="btn-label">Door</span>
-                                    <span class="btn-status">ON</span>
+                        <div class="device-controls">
+                            <button class="device-btn door-btn active">
+                                <i class="fas fa-door-open"></i>
+                                <div class="btn-text">
+                                    <span class="btn-name">Door</span>
+                                    <span class="btn-state">ON</span>
                                 </div>
                             </button>
-                            <button class="control-btn light">
-                                <div class="btn-icon">
-                                    <i class="fas fa-lightbulb"></i>
-                                </div>
-                                <div class="btn-info">
-                                    <span class="btn-label">Light</span>
-                                    <span class="btn-status">OFF</span>
+                            <button class="device-btn light-btn">
+                                <i class="fas fa-lightbulb"></i>
+                                <div class="btn-text">
+                                    <span class="btn-name">Light</span>
+                                    <span class="btn-state">OFF</span>
                                 </div>
                             </button>
                         </div>
                     </div>
 
                     <!-- Case Section -->
-                    <div class="case-section">
-                        <div class="case-header">
+                    <div class="case-area">
+                        <div class="case-title-bar">
                             <h3>CASE 01</h3>
-                            <button class="nav-arrow">
+                            <button class="arrow-btn">
                                 <i class="fas fa-chevron-right"></i>
                             </button>
                         </div>
 
-                        <div class="case-content">
-                            <!-- Shaft -->
-                            <div class="item-container">
-                                <div class="item-header">
-                                    <div class="item-icon shaft-icon">
-                                        <i class="fas fa-pen"></i>
-                                    </div>
-                                    <span class="item-title">Shaft</span>
+                        <div class="case-columns">
+                            <!-- Shaft Column -->
+                            <div class="case-column">
+                                <div class="column-header">
+                                    <i class="fas fa-pen column-icon"></i>
+                                    <span class="column-title">Shaft</span>
                                 </div>
-                                <div class="item-grid">
-                                    <div class="item-card">
-                                        <span class="card-name">Shaft 1</span>
-                                        <div class="card-status">
+                                <div class="items-list">
+                                    <div class="list-item">
+                                        <span class="item-name">Shaft 1</span>
+                                        <div class="item-status">
                                             <span class="status-text">Normal</span>
-                                            <span class="status-badge normal">8</span>
+                                            <span class="status-num normal-num">8</span>
                                         </div>
                                     </div>
-                                    <div class="item-card">
-                                        <span class="card-name">Shaft 2</span>
-                                        <div class="card-status">
+                                    <div class="list-item">
+                                        <span class="item-name">Shaft 2</span>
+                                        <div class="item-status">
                                             <span class="status-text">Lent</span>
-                                            <span class="status-badge lent">1</span>
+                                            <span class="status-num lent-num">1</span>
                                         </div>
                                     </div>
-                                    <div class="item-card">
-                                        <span class="card-name">Shaft 3</span>
-                                        <div class="card-status">
+                                    <div class="list-item">
+                                        <span class="item-name">Shaft 3</span>
+                                        <div class="item-status">
                                             <span class="status-text">Testing</span>
-                                            <span class="status-badge testing">2</span>
+                                            <span class="status-num testing-num">2</span>
                                         </div>
                                     </div>
-                                    <div class="item-card">
-                                        <span class="card-name">Shaft 4</span>
-                                        <div class="card-status">
+                                    <div class="list-item">
+                                        <span class="item-name">Shaft 4</span>
+                                        <div class="item-status">
                                             <span class="status-text">Scrap</span>
-                                            <span class="status-badge scrap">1</span>
+                                            <span class="status-num scrap-num">1</span>
                                         </div>
                                     </div>
-                                    <div class="item-card">
-                                        <span class="card-name">Shaft 5</span>
-                                        <div class="card-status">
+                                    <div class="list-item">
+                                        <span class="item-name">Shaft 5</span>
+                                        <div class="item-status">
                                             <span class="status-text">Loss</span>
-                                            <span class="status-badge loss">1</span>
+                                            <span class="status-num loss-num">1</span>
                                         </div>
                                     </div>
-                                    <div class="item-card">
-                                        <span class="card-name">Shaft 6</span>
-                                        <div class="card-status">
+                                    <div class="list-item">
+                                        <span class="item-name">Shaft 6</span>
+                                        <div class="item-status">
                                             <span class="status-text">Damage</span>
-                                            <span class="status-badge damage">1</span>
+                                            <span class="status-num damage-num">1</span>
                                         </div>
                                     </div>
                                 </div>
                             </div>
 
-                            <!-- Capacitive -->
-                            <div class="item-container">
-                                <div class="item-header">
-                                    <div class="item-icon capacitive-icon">
-                                        <i class="fas fa-bolt"></i>
-                                    </div>
-                                    <span class="item-title">Capacitive</span>
+                            <!-- Capacitive Column -->
+                            <div class="case-column">
+                                <div class="column-header">
+                                    <i class="fas fa-microchip column-icon"></i>
+                                    <span class="column-title">Capacitive</span>
                                 </div>
-                                <div class="item-grid">
-                                    <div class="item-card">
-                                        <span class="card-name">Capacitive 1</span>
-                                        <div class="card-status">
+                                <div class="items-list">
+                                    <div class="list-item">
+                                        <span class="item-name">Capacitive 1</span>
+                                        <div class="item-status">
                                             <span class="status-text">Normal</span>
-                                            <span class="status-badge normal">3</span>
+                                            <span class="status-num normal-num">5</span>
                                         </div>
                                     </div>
-                                    <div class="item-card">
-                                        <span class="card-name">Capacitive 2</span>
-                                        <div class="card-status">
+                                    <div class="list-item">
+                                        <span class="item-name">Capacitive 2</span>
+                                        <div class="item-status">
                                             <span class="status-text">Lent</span>
-                                            <span class="status-badge lent">1</span>
+                                            <span class="status-num lent-num">1</span>
                                         </div>
                                     </div>
-                                    <div class="item-card">
-                                        <span class="card-name">Capacitive 3</span>
-                                        <div class="card-status">
+                                    <div class="list-item">
+                                        <span class="item-name">Capacitive 3</span>
+                                        <div class="item-status">
                                             <span class="status-text">Testing</span>
-                                            <span class="status-badge testing">1</span>
+                                            <span class="status-num testing-num">5</span>
                                         </div>
                                     </div>
-                                    <div class="item-card">
-                                        <span class="card-name">Capacitive 4</span>
-                                        <div class="card-status">
-                                            <span class="status-text">Scrap</span>
-                                            <span class="status-badge scrap">1</span>
+                                    <div class="list-item">
+                                        <span class="item-name">Capacitive 4</span>
+                                        <div class="item-status">
+                                            <span class="status-text">Lent</span>
+                                            <span class="status-num lent-num">1</span>
                                         </div>
                                     </div>
                                 </div>
                             </div>
 
-                            <!-- Insulating blanket -->
-                            <div class="item-container">
-                                <div class="item-header">
-                                    <div class="item-icon blanket-icon">
-                                        <i class="fas fa-th-large"></i>
-                                    </div>
-                                    <span class="item-title">Insulating blanket</span>
+                            <!-- Insulating Blanket Column -->
+                            <div class="case-column">
+                                <div class="column-header">
+                                    <i class="fas fa-layer-group column-icon"></i>
+                                    <span class="column-title">Insulating blanket</span>
                                 </div>
-                                <div class="item-grid">
-                                    <div class="item-card">
-                                        <span class="card-name">Blanket 1</span>
-                                        <div class="card-status">
+                                <div class="items-list">
+                                    <div class="list-item">
+                                        <span class="item-name">Blanket 1</span>
+                                        <div class="item-status">
                                             <span class="status-text">正常</span>
-                                            <span class="status-badge normal">10</span>
+                                            <span class="status-num normal-num">10</span>
                                         </div>
                                     </div>
-                                    <div class="item-card">
-                                        <span class="card-name">Blanket 2</span>
-                                        <div class="card-status">
-                                            <span class="status-text">借出</span>
-                                            <span class="status-badge lent">1</span>
+                                    <div class="list-item">
+                                        <span class="item-name">Blanket 2</span>
+                                        <div class="item-status">
+                                            <span class="status-text">測試</span>
+                                            <span class="status-num testing-num">1</span>
                                         </div>
                                     </div>
-                                    <div class="item-card">
-                                        <span class="card-name">Blanket 3</span>
-                                        <div class="card-status">
-                                            <span class="status-text">送检</span>
-                                            <span class="status-badge testing">2</span>
+                                    <div class="list-item">
+                                        <span class="item-name">Blanket 3</span>
+                                        <div class="item-status">
+                                            <span class="status-text">外借</span>
+                                            <span class="status-num lent-num">3</span>
                                         </div>
                                     </div>
-                                    <div class="item-card">
-                                        <span class="card-name">Blanket 4</span>
-                                        <div class="card-status">
-                                            <span class="status-text">报废</span>
-                                            <span class="status-badge scrap">1</span>
+                                    <div class="list-item">
+                                        <span class="item-name">Blanket 4</span>
+                                        <div class="item-status">
+                                            <span class="status-text">損壞</span>
+                                            <span class="status-num damage-num">1</span>
                                         </div>
                                     </div>
-                                    <div class="item-card">
-                                        <span class="card-name">Blanket 5</span>
-                                        <div class="card-status">
-                                            <span class="status-text">丢失</span>
-                                            <span class="status-badge loss">1</span>
+                                    <div class="list-item">
+                                        <span class="item-name">Blanket 5</span>
+                                        <div class="item-status">
+                                            <span class="status-text">正常</span>
+                                            <span class="status-num normal-num">1</span>
                                         </div>
                                     </div>
                                 </div>
@@ -313,73 +304,69 @@
                         <div class="pagination-dots">
                             <span class="dot active"></span>
                             <span class="dot"></span>
-                            <span class="dot"></span>
                         </div>
                     </div>
                 </section>
 
-                <!-- Storage Box 2 -->
-                <section class="storage-section collapsed">
-                    <div class="section-header">
-                        <h2 class="section-title">NO.2 Storage box</h2>
-                        <div class="section-actions">
-                            <button class="action-btn">
+                <!-- Sensor 2 Section -->
+                <section class="sensor-box collapsed">
+                    <div class="sensor-header">
+                        <h2 class="sensor-title">SENSOR NO.2 Local Name</h2>
+                        <div class="sensor-actions">
+                            <button class="icon-btn">
                                 <i class="fas fa-filter"></i>
                             </button>
-                            <button class="action-btn">
+                            <button class="icon-btn expand-btn">
                                 <i class="fas fa-chevron-right"></i>
                             </button>
                         </div>
                     </div>
 
-                    <!-- Stats Row -->
-                    <div class="stats-row">
-                        <div class="stats-card">
-                            <div class="stat-item">
+                    <!-- Stats and Controls Row -->
+                    <div class="stats-controls-row">
+                        <div class="stats-grid">
+                            <div class="stat-box">
                                 <span class="stat-label">Total</span>
-                                <span class="stat-value">20</span>
+                                <span class="stat-value total">20</span>
                             </div>
-                            <div class="stat-item">
-                                <span class="stat-label">Delay</span>
+                            <div class="stat-box">
+                                <span class="stat-label">Defay</span>
                                 <span class="stat-value zero">0</span>
                             </div>
-                            <div class="stat-item">
+                            <div class="stat-box">
                                 <span class="stat-label">Detection</span>
                                 <span class="stat-value zero">0</span>
                             </div>
-                            <div class="stat-item">
+                            <div class="stat-box">
                                 <span class="stat-label">Scrap</span>
                                 <span class="stat-value zero">0</span>
                             </div>
                         </div>
 
-                        <div class="env-card">
-                            <i class="fas fa-tint"></i>
-                            <span>38%</span>
+                        <div class="env-indicators">
+                            <div class="env-circle">
+                                <i class="fas fa-tint"></i>
+                                <span>38%</span>
+                            </div>
+                            <div class="env-circle">
+                                <i class="fas fa-thermometer-half"></i>
+                                <span>28°C</span>
+                            </div>
                         </div>
 
-                        <div class="env-card">
-                            <i class="fas fa-thermometer-half"></i>
-                            <span>28°C</span>
-                        </div>
-
-                        <div class="control-buttons">
-                            <button class="control-btn door">
-                                <div class="btn-icon">
-                                    <i class="fas fa-door-closed"></i>
-                                </div>
-                                <div class="btn-info">
-                                    <span class="btn-label">Door</span>
-                                    <span class="btn-status">OFF</span>
+                        <div class="device-controls">
+                            <button class="device-btn door-btn">
+                                <i class="fas fa-door-closed"></i>
+                                <div class="btn-text">
+                                    <span class="btn-name">Door</span>
+                                    <span class="btn-state">OFF</span>
                                 </div>
                             </button>
-                            <button class="control-btn light active">
-                                <div class="btn-icon">
-                                    <i class="fas fa-lightbulb"></i>
-                                </div>
-                                <div class="btn-info">
-                                    <span class="btn-label">Light</span>
-                                    <span class="btn-status">ON</span>
+                            <button class="device-btn light-btn active">
+                                <i class="fas fa-lightbulb"></i>
+                                <div class="btn-text">
+                                    <span class="btn-name">Light</span>
+                                    <span class="btn-state">ON</span>
                                 </div>
                             </button>
                         </div>
