@@ -1,0 +1,131 @@
+/* Monitor Page Specific Styles */
+
+/* Sensor Section */
+.sensor-section {
+    background: #F5FAFA;
+    border-radius: 20px;
+    padding: 24px 30px;
+    box-shadow: 0 4px 20px rgba(0, 118, 135, 0.08);
+    margin-bottom: 20px;
+}
+
+/* Highlighted Sensor Section */
+.sensor-section.highlighted {
+    background: linear-gradient(0deg, rgba(145, 242, 224, 0.2), rgba(145, 242, 224, 0.2)), #EAF3F4;
+    box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.05),
+                6px 6px 15px rgba(0, 118, 135, 0.05),
+                -6px -6px 19px rgba(255, 255, 255, 0.5),
+                inset 0px 0px 30px rgba(0, 118, 135, 0.1);
+    border: 2px solid rgba(145, 242, 224, 0.3);
+}
+
+.sensor-section.highlighted .section-title {
+    color: #007C84;
+    font-weight: 800;
+}
+
+.sensor-section.highlighted .status-tags,
+.sensor-section.highlighted .stats-row,
+.sensor-section.highlighted .case-section {
+    position: relative;
+}
+
+/* Ensure proper spacing for sensor sections */
+.sensor-section .section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.sensor-section .section-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #007C84;
+}
+
+/* Adjust stats card for sensors */
+.sensor-section .stats-card {
+    background: rgba(234, 243, 244, 0.8);
+}
+
+.sensor-section.highlighted .stats-card {
+    background: rgba(255, 255, 255, 0.6);
+    box-shadow: 4px 4px 12px rgba(0, 118, 135, 0.08);
+}
+
+/* Adjust env cards for highlighted section */
+.sensor-section.highlighted .env-card {
+    background: rgba(255, 255, 255, 0.7);
+    box-shadow: 4px 4px 12px rgba(0, 118, 135, 0.08);
+}
+
+/* Item containers in highlighted section */
+.sensor-section.highlighted .item-container {
+    background: rgba(255, 255, 255, 0.7);
+    box-shadow: 0 2px 8px rgba(0, 118, 135, 0.05);
+}
+
+.sensor-section.highlighted .item-card {
+    background: #FFFFFF;
+    box-shadow: 0 1px 4px rgba(0, 118, 135, 0.05);
+}
+
+/* Control buttons in highlighted section */
+.sensor-section.highlighted .control-btn {
+    box-shadow: 0 2px 10px rgba(0, 118, 135, 0.08);
+}
+
+.sensor-section.highlighted .control-btn.active {
+    box-shadow: 0 8px 25px rgba(0, 124, 132, 0.3);
+}
+
+/* Collapsed sensor section */
+.sensor-section.collapsed {
+    padding: 20px 30px;
+}
+
+.sensor-section.collapsed .stats-row {
+    margin-bottom: 16px;
+}
+
+.sensor-section.collapsed .status-tags {
+    margin-bottom: 0;
+}
+
+/* Animation for highlight */
+@keyframes highlightPulse {
+    0%, 100% {
+        box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.05),
+                    6px 6px 15px rgba(0, 118, 135, 0.05),
+                    -6px -6px 19px rgba(255, 255, 255, 0.5),
+                    inset 0px 0px 30px rgba(0, 118, 135, 0.1);
+    }
+    50% {
+        box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.05),
+                    6px 6px 15px rgba(0, 118, 135, 0.1),
+                    -6px -6px 19px rgba(255, 255, 255, 0.5),
+                    inset 0px 0px 35px rgba(0, 118, 135, 0.15);
+    }
+}
+
+.sensor-section.highlighted {
+    animation: highlightPulse 3s ease-in-out infinite;
+}
+
+/* Responsive adjustments for monitor page */
+@media (max-width: 1400px) {
+    .sensor-section.highlighted {
+        animation: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .sensor-section {
+        padding: 16px 20px;
+    }
+
+    .sensor-section .section-title {
+        font-size: 18px;
+    }
+}

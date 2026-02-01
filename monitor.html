@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard - Storage Management</title>
+    <title>Monitor - Storage Management</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="monitor.css">
 </head>
 <body>
     <div class="dashboard">
@@ -24,12 +25,12 @@
             </div>
 
             <nav class="nav-menu">
-                <a href="index.html" class="nav-item active">
+                <a href="index.html" class="nav-item">
                     <i class="fas fa-home"></i>
                     <span>Home</span>
                     <i class="fas fa-chevron-right arrow"></i>
                 </a>
-                <a href="monitor.html" class="nav-item">
+                <a href="monitor.html" class="nav-item active">
                     <i class="fas fa-desktop"></i>
                     <span>Monitor</span>
                     <i class="fas fa-chevron-right arrow"></i>
@@ -80,10 +81,10 @@
 
             <!-- Content Area -->
             <div class="content-area">
-                <!-- Storage Box 1 -->
-                <section class="storage-section expanded">
+                <!-- Sensor 1 - Highlighted -->
+                <section class="sensor-section highlighted">
                     <div class="section-header">
-                        <h2 class="section-title">NO.1 Storage box</h2>
+                        <h2 class="section-title">SENSOR NO.1 Local Name</h2>
                         <div class="section-actions">
                             <button class="action-btn">
                                 <i class="fas fa-filter"></i>
@@ -318,10 +319,10 @@
                     </div>
                 </section>
 
-                <!-- Storage Box 2 -->
-                <section class="storage-section collapsed">
+                <!-- Sensor 2 - Normal -->
+                <section class="sensor-section">
                     <div class="section-header">
-                        <h2 class="section-title">NO.2 Storage box</h2>
+                        <h2 class="section-title">SENSOR NO.2 Local Name</h2>
                         <div class="section-actions">
                             <button class="action-btn">
                                 <i class="fas fa-filter"></i>
