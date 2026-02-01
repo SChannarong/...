@@ -3,442 +3,396 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Overview - Storage Management</title>
+    <title>Dashboard - Storage Management</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="overview.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="dashboard.css">
 </head>
 <body>
-    <div class="overview-container">
-        <div class="interface">
-            <div class="content">
-                <!-- Section 1 - Storage Box NO.1 -->
-                <div class="section section-main">
-                    <div class="header">
-                        <div class="left">
-                            <div class="title">
-                                <span class="number">NO.1</span>
-                                <span class="name">Storage box</span>
-                            </div>
-                        </div>
-                        <div class="right">
-                            <button class="arrow-btn">
-                                <svg width="16" height="20" viewBox="0 0 16 20" fill="none">
-                                    <path d="M2 2L14 10L2 18" stroke="#007C84" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                            </button>
-                            <button class="arrow-btn arrow-active">
-                                <svg width="16" height="20" viewBox="0 0 16 20" fill="none">
-                                    <path d="M2 2L14 10L2 18" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" transform="rotate(90 8 10)"/>
-                                </svg>
-                            </button>
-                        </div>
-                    </div>
-
-                    <div class="container">
-                        <!-- Status Tags -->
-                        <div class="status-row">
-                            <div class="tag-count" style="background: #2DB5B2;">
-                                <span class="tag-label">Normal</span>
-                                <span class="tag-number">25</span>
-                            </div>
-                            <div class="tag-count" style="background: #39A5ED;">
-                                <span class="tag-label">Testing</span>
-                                <span class="tag-number">7</span>
-                            </div>
-                            <div class="tag-count" style="background: #C158C2;">
-                                <span class="tag-label">Lent</span>
-                                <span class="tag-number">5</span>
-                            </div>
-                            <div class="tag-count" style="background: #F47780;">
-                                <span class="tag-label">Damage</span>
-                                <span class="tag-number">3</span>
-                            </div>
-                            <div class="tag-count" style="background: #DBBA01;">
-                                <span class="tag-label">Loss</span>
-                                <span class="tag-number">2</span>
-                            </div>
-                            <div class="tag-count" style="background: #9D9D9D;">
-                                <span class="tag-label">Scrap</span>
-                                <span class="tag-number">4</span>
-                            </div>
-                        </div>
-
-                        <!-- Column with Stats -->
-                        <div class="column-row">
-                            <div class="left-stats">
-                                <!-- Stats Section -->
-                                <div class="stats-section">
-                                    <div class="stats-column">
-                                        <div class="count-item">
-                                            <span class="count-label">Total</span>
-                                            <span class="count-value">40</span>
-                                        </div>
-                                        <div class="count-item">
-                                            <span class="count-label">Delay</span>
-                                            <span class="count-value delay">7</span>
-                                        </div>
-                                        <div class="count-item">
-                                            <span class="count-label">Detection</span>
-                                            <span class="count-value detection">3</span>
-                                        </div>
-                                        <div class="count-item">
-                                            <span class="count-label">Scrap</span>
-                                            <span class="count-value scrap">5</span>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- Weather Section -->
-                                <div class="weather-section">
-                                    <div class="weather-item">
-                                        <svg class="weather-icon" width="36" height="36" viewBox="0 0 36 36" fill="none">
-                                            <path d="M18 6C12.48 6 8 10.48 8 16C8 20.42 10.87 24.17 14.84 25.5C14.62 25.83 14.45 26.2 14.35 26.59C14.13 27.47 14.28 28.41 14.77 29.17C15.26 29.93 16.04 30.44 16.92 30.59C17.08 30.62 17.24 30.63 17.4 30.63C18.55 30.63 19.61 30 20.16 28.96C20.4 28.52 20.53 28.02 20.53 27.51C20.53 26.67 20.2 25.86 19.61 25.27C19.02 24.68 18.21 24.35 17.37 24.35H17.26C17.1 24.35 16.94 24.37 16.78 24.4C16.26 24.5 15.79 24.76 15.43 25.13C12.81 23.97 11 21.2 11 18C11 13.58 14.58 10 19 10C23.42 10 27 13.58 27 18C27 21.2 25.19 23.97 22.57 25.13C22.21 24.76 21.74 24.5 21.22 24.4C21.06 24.37 20.9 24.35 20.74 24.35H20.63C19.79 24.35 18.98 24.68 18.39 25.27C17.8 25.86 17.47 26.67 17.47 27.51C17.47 28.02 17.6 28.52 17.84 28.96C18.39 30 19.45 30.63 20.6 30.63C20.76 30.63 20.92 30.62 21.08 30.59C21.96 30.44 22.74 29.93 23.23 29.17C23.72 28.41 23.87 27.47 23.65 26.59C23.55 26.2 23.38 25.83 23.16 25.5C27.13 24.17 30 20.42 30 16C30 10.48 25.52 6 20 6H18Z" fill="#007C84"/>
-                                        </svg>
-                                        <span class="weather-value">30%</span>
-                                    </div>
-                                </div>
-
-                                <!-- Temperature Section -->
-                                <div class="temp-section">
-                                    <div class="temp-item">
-                                        <svg class="temp-icon" width="36" height="36" viewBox="0 0 36 36" fill="none">
-                                            <path d="M18 4C15.79 4 14 5.79 14 8V20.26C12.19 21.53 11 23.62 11 26C11 29.87 14.13 33 18 33C21.87 33 25 29.87 25 26C25 23.62 23.81 21.53 22 20.26V8C22 5.79 20.21 4 18 4ZM18 7C18.55 7 19 7.45 19 8V12H17V8C17 7.45 17.45 7 18 7Z" fill="#007C84"/>
-                                        </svg>
-                                        <span class="temp-value">28℃</span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="right-buttons">
-                                <button class="control-btn active">
-                                    <div class="icon-wrapper">
-                                        <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
-                                            <rect x="6" y="4" width="24" height="28" rx="2" stroke="white" stroke-width="2"/>
-                                            <rect x="10" y="8" width="16" height="20" fill="white"/>
-                                        </svg>
-                                    </div>
-                                    <div class="btn-text">
-                                        <span class="btn-label">Door</span>
-                                        <span class="btn-status">ON</span>
-                                    </div>
-                                </button>
-                                <button class="control-btn inactive">
-                                    <div class="icon-wrapper inactive">
-                                        <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
-                                            <path d="M18 4C15.24 4 13 6.24 13 9V14H23V9C23 6.24 20.76 4 18 4ZM18 7C19.1 7 20 7.9 20 9V11H16V9C16 7.9 16.9 7 18 7Z" fill="rgba(0, 124, 132, 0.3)"/>
-                                            <path d="M9 14H27V32H9V14Z" fill="rgba(0, 124, 132, 0.3)"/>
-                                        </svg>
-                                    </div>
-                                    <div class="btn-text">
-                                        <span class="btn-label inactive">Light</span>
-                                        <span class="btn-status inactive">OFF</span>
-                                    </div>
-                                </button>
-                            </div>
-                        </div>
-
-                        <!-- Divider Line -->
-                        <div class="divider"></div>
-
-                        <!-- Case Container -->
-                        <div class="case-container">
-                            <div class="case-title">
-                                <span>CASE 01</span>
-                                <button class="expand-btn">
-                                    <svg width="16" height="20" viewBox="0 0 16 20" fill="none">
-                                        <path d="M2 2L14 10L2 18" stroke="#007C84" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>
-                                </button>
-                            </div>
-                            <div class="case-content">
-                                <!-- Shaft Container -->
-                                <div class="shaft-container">
-                                    <div class="shaft-header">
-                                        <div class="shaft-icon">
-                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                                <rect x="4" y="4" width="16" height="16" rx="2" fill="#007C84"/>
-                                            </svg>
-                                        </div>
-                                        <span class="shaft-title">Shaft</span>
-                                    </div>
-                                    <div class="shaft-form">
-                                        <div class="shaft-row">
-                                            <div class="type-card">
-                                                <span class="type-name">Shaft 1</span>
-                                                <div class="type-state">
-                                                    <span class="state-label">Normal</span>
-                                                    <span class="state-count" style="background: #2DB5B2;">8</span>
-                                                </div>
-                                            </div>
-                                            <div class="type-card">
-                                                <span class="type-name">Shaft 2</span>
-                                                <div class="type-state">
-                                                    <span class="state-label">Lent</span>
-                                                    <span class="state-count" style="background: #C158C2;">1</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="shaft-row">
-                                            <div class="type-card">
-                                                <span class="type-name">Shaft 3</span>
-                                                <div class="type-state">
-                                                    <span class="state-label">Testing</span>
-                                                    <span class="state-count" style="background: #39A5ED;">2</span>
-                                                </div>
-                                            </div>
-                                            <div class="type-card">
-                                                <span class="type-name">Shaft 4</span>
-                                                <div class="type-state">
-                                                    <span class="state-label">Scrap</span>
-                                                    <span class="state-count" style="background: #9D9D9D;">1</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="shaft-row">
-                                            <div class="type-card">
-                                                <span class="type-name">Shaft 5</span>
-                                                <div class="type-state">
-                                                    <span class="state-label">Damage</span>
-                                                    <span class="state-count" style="background: #F47780;">3</span>
-                                                </div>
-                                            </div>
-                                            <div class="type-card">
-                                                <span class="type-name">Shaft 6</span>
-                                                <div class="type-state">
-                                                    <span class="state-label">Loss</span>
-                                                    <span class="state-count" style="background: #DBBA01;">2</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- Hub Container -->
-                                <div class="shaft-container">
-                                    <div class="shaft-header">
-                                        <div class="shaft-icon">
-                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                                <circle cx="12" cy="12" r="8" fill="#007C84"/>
-                                            </svg>
-                                        </div>
-                                        <span class="shaft-title">Hub</span>
-                                    </div>
-                                    <div class="shaft-form">
-                                        <div class="shaft-row">
-                                            <div class="type-card">
-                                                <span class="type-name">Hub 1</span>
-                                                <div class="type-state">
-                                                    <span class="state-label">Normal</span>
-                                                    <span class="state-count" style="background: #2DB5B2;">5</span>
-                                                </div>
-                                            </div>
-                                            <div class="type-card">
-                                                <span class="type-name">Hub 2</span>
-                                                <div class="type-state">
-                                                    <span class="state-label">Testing</span>
-                                                    <span class="state-count" style="background: #39A5ED;">3</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="shaft-row">
-                                            <div class="type-card">
-                                                <span class="type-name">Hub 3</span>
-                                                <div class="type-state">
-                                                    <span class="state-label">Lent</span>
-                                                    <span class="state-count" style="background: #C158C2;">2</span>
-                                                </div>
-                                            </div>
-                                            <div class="type-card">
-                                                <span class="type-name">Hub 4</span>
-                                                <div class="type-state">
-                                                    <span class="state-label">Normal</span>
-                                                    <span class="state-count" style="background: #2DB5B2;">4</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="shaft-row">
-                                            <div class="type-card">
-                                                <span class="type-name">Hub 5</span>
-                                                <div class="type-state">
-                                                    <span class="state-label">Damage</span>
-                                                    <span class="state-count" style="background: #F47780;">1</span>
-                                                </div>
-                                            </div>
-                                            <div class="type-card">
-                                                <span class="type-name">Hub 6</span>
-                                                <div class="type-state">
-                                                    <span class="state-label">Scrap</span>
-                                                    <span class="state-count" style="background: #9D9D9D;">2</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- Bearing Container -->
-                                <div class="shaft-container">
-                                    <div class="shaft-header">
-                                        <div class="shaft-icon">
-                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                                <circle cx="12" cy="12" r="8" stroke="#007C84" stroke-width="2"/>
-                                                <circle cx="12" cy="12" r="4" fill="#007C84"/>
-                                            </svg>
-                                        </div>
-                                        <span class="shaft-title">Bearing</span>
-                                    </div>
-                                    <div class="shaft-form">
-                                        <div class="shaft-row">
-                                            <div class="type-card">
-                                                <span class="type-name">Bearing 1</span>
-                                                <div class="type-state">
-                                                    <span class="state-label">Normal</span>
-                                                    <span class="state-count" style="background: #2DB5B2;">12</span>
-                                                </div>
-                                            </div>
-                                            <div class="type-card">
-                                                <span class="type-name">Bearing 2</span>
-                                                <div class="type-state">
-                                                    <span class="state-label">Normal</span>
-                                                    <span class="state-count" style="background: #2DB5B2;">8</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="shaft-row">
-                                            <div class="type-card">
-                                                <span class="type-name">Bearing 3</span>
-                                                <div class="type-state">
-                                                    <span class="state-label">Testing</span>
-                                                    <span class="state-count" style="background: #39A5ED;">2</span>
-                                                </div>
-                                            </div>
-                                            <div class="type-card">
-                                                <span class="type-name">Bearing 4</span>
-                                                <div class="type-state">
-                                                    <span class="state-label">Loss</span>
-                                                    <span class="state-count" style="background: #DBBA01;">1</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+    <div class="dashboard">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="logo">
+                <div class="logo-icon">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                        <circle cx="16" cy="16" r="14" stroke="#007C84" stroke-width="2"/>
+                        <path d="M10 16C10 12.69 12.69 10 16 10C19.31 10 22 12.69 22 16" stroke="#007C84" stroke-width="2" stroke-linecap="round"/>
+                        <circle cx="16" cy="16" r="3" fill="#007C84"/>
+                    </svg>
                 </div>
-
-                <!-- Section 2 - Storage Box NO.2 -->
-                <div class="section section-secondary">
-                    <div class="header">
-                        <div class="left">
-                            <div class="title">
-                                <span class="number">NO.2</span>
-                                <span class="name">Storage box</span>
-                            </div>
-                        </div>
-                        <div class="right">
-                            <button class="arrow-btn">
-                                <svg width="16" height="20" viewBox="0 0 16 20" fill="none">
-                                    <path d="M2 2L14 10L2 18" stroke="#007C84" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                            </button>
-                            <button class="arrow-btn">
-                                <svg width="16" height="20" viewBox="0 0 16 20" fill="none">
-                                    <path d="M2 2L14 10L2 18" stroke="#007C84" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                            </button>
-                        </div>
-                    </div>
-
-                    <div class="container collapsed">
-                        <!-- Column with Stats -->
-                        <div class="column-row">
-                            <div class="left-stats">
-                                <!-- Stats Section -->
-                                <div class="stats-section">
-                                    <div class="stats-column">
-                                        <div class="count-item">
-                                            <span class="count-label">Total</span>
-                                            <span class="count-value">20</span>
-                                        </div>
-                                        <div class="count-item">
-                                            <span class="count-label">Delay</span>
-                                            <span class="count-value zero">0</span>
-                                        </div>
-                                        <div class="count-item">
-                                            <span class="count-label">Detection</span>
-                                            <span class="count-value zero">0</span>
-                                        </div>
-                                        <div class="count-item">
-                                            <span class="count-label">Scrap</span>
-                                            <span class="count-value zero">0</span>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- Weather Section -->
-                                <div class="weather-section">
-                                    <div class="weather-item">
-                                        <svg class="weather-icon" width="36" height="36" viewBox="0 0 36 36" fill="none">
-                                            <path d="M18 6C12.48 6 8 10.48 8 16C8 20.42 10.87 24.17 14.84 25.5C14.62 25.83 14.45 26.2 14.35 26.59C14.13 27.47 14.28 28.41 14.77 29.17C15.26 29.93 16.04 30.44 16.92 30.59C17.08 30.62 17.24 30.63 17.4 30.63C18.55 30.63 19.61 30 20.16 28.96C20.4 28.52 20.53 28.02 20.53 27.51C20.53 26.67 20.2 25.86 19.61 25.27C19.02 24.68 18.21 24.35 17.37 24.35H17.26C17.1 24.35 16.94 24.37 16.78 24.4C16.26 24.5 15.79 24.76 15.43 25.13C12.81 23.97 11 21.2 11 18C11 13.58 14.58 10 19 10C23.42 10 27 13.58 27 18C27 21.2 25.19 23.97 22.57 25.13C22.21 24.76 21.74 24.5 21.22 24.4C21.06 24.37 20.9 24.35 20.74 24.35H20.63C19.79 24.35 18.98 24.68 18.39 25.27C17.8 25.86 17.47 26.67 17.47 27.51C17.47 28.02 17.6 28.52 17.84 28.96C18.39 30 19.45 30.63 20.6 30.63C20.76 30.63 20.92 30.62 21.08 30.59C21.96 30.44 22.74 29.93 23.23 29.17C23.72 28.41 23.87 27.47 23.65 26.59C23.55 26.2 23.38 25.83 23.16 25.5C27.13 24.17 30 20.42 30 16C30 10.48 25.52 6 20 6H18Z" fill="#007C84"/>
-                                        </svg>
-                                        <span class="weather-value">38%</span>
-                                    </div>
-                                </div>
-
-                                <!-- Temperature Section -->
-                                <div class="temp-section">
-                                    <div class="temp-item">
-                                        <svg class="temp-icon" width="36" height="36" viewBox="0 0 36 36" fill="none">
-                                            <path d="M18 4C15.79 4 14 5.79 14 8V20.26C12.19 21.53 11 23.62 11 26C11 29.87 14.13 33 18 33C21.87 33 25 29.87 25 26C25 23.62 23.81 21.53 22 20.26V8C22 5.79 20.21 4 18 4ZM18 7C18.55 7 19 7.45 19 8V12H17V8C17 7.45 17.45 7 18 7Z" fill="#007C84"/>
-                                        </svg>
-                                        <span class="temp-value">28℃</span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="right-buttons">
-                                <button class="control-btn inactive">
-                                    <div class="icon-wrapper inactive">
-                                        <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
-                                            <rect x="6" y="4" width="24" height="28" rx="2" stroke="rgba(0, 124, 132, 0.3)" stroke-width="2"/>
-                                            <rect x="10" y="8" width="16" height="20" fill="rgba(0, 124, 132, 0.3)"/>
-                                        </svg>
-                                    </div>
-                                    <div class="btn-text">
-                                        <span class="btn-label inactive">Door</span>
-                                        <span class="btn-status inactive">OFF</span>
-                                    </div>
-                                </button>
-                                <button class="control-btn active">
-                                    <div class="icon-wrapper">
-                                        <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
-                                            <path d="M18 4C15.24 4 13 6.24 13 9V14H23V9C23 6.24 20.76 4 18 4ZM18 7C19.1 7 20 7.9 20 9V11H16V9C16 7.9 16.9 7 18 7Z" fill="white"/>
-                                            <path d="M9 14H27V32H9V14Z" fill="white"/>
-                                        </svg>
-                                    </div>
-                                    <div class="btn-text">
-                                        <span class="btn-label">Light</span>
-                                        <span class="btn-status">ON</span>
-                                    </div>
-                                </button>
-                            </div>
-                        </div>
-
-                        <!-- Status Tags -->
-                        <div class="status-row">
-                            <div class="tag-count" style="background: #2DB5B2;">
-                                <span class="tag-label">Normal</span>
-                                <span class="tag-number">10</span>
-                            </div>
-                            <div class="tag-count" style="background: #39A5ED;">
-                                <span class="tag-label">Testing</span>
-                                <span class="tag-number">1</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <span class="logo-text">DASHBOARD</span>
             </div>
-        </div>
+
+            <nav class="nav-menu">
+                <a href="#" class="nav-item active">
+                    <i class="fas fa-home"></i>
+                    <span>Home</span>
+                    <i class="fas fa-chevron-right arrow"></i>
+                </a>
+                <a href="#" class="nav-item">
+                    <i class="fas fa-desktop"></i>
+                    <span>Monitor</span>
+                    <i class="fas fa-chevron-right arrow"></i>
+                </a>
+                <a href="#" class="nav-item">
+                    <i class="fas fa-chart-line"></i>
+                    <span>Analysis</span>
+                    <i class="fas fa-chevron-right arrow"></i>
+                </a>
+                <a href="#" class="nav-item">
+                    <i class="fas fa-file-alt"></i>
+                    <span>Record</span>
+                    <i class="fas fa-chevron-right arrow"></i>
+                </a>
+            </nav>
+
+            <div class="sidebar-footer">
+                <button class="footer-btn">
+                    <i class="fas fa-cog"></i>
+                </button>
+                <button class="footer-btn">
+                    <i class="fas fa-question-circle"></i>
+                </button>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Header -->
+            <header class="header">
+                <div class="header-right">
+                    <span class="time">08:53 PM</span>
+                    <span class="date">2022 / 05 / 26</span>
+                    <div class="weather">
+                        <i class="fas fa-tint"></i>
+                        <span>63%</span>
+                    </div>
+                    <div class="temperature">
+                        <i class="fas fa-thermometer-half"></i>
+                        <span>26°C</span>
+                    </div>
+                    <div class="toggle-switch">
+                        <input type="checkbox" id="mainToggle" checked>
+                        <label for="mainToggle"></label>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Content Area -->
+            <div class="content-area">
+                <!-- Storage Box 1 -->
+                <section class="storage-section expanded">
+                    <div class="section-header">
+                        <h2 class="section-title">NO.1 Storage box</h2>
+                        <div class="section-actions">
+                            <button class="action-btn">
+                                <i class="fas fa-filter"></i>
+                            </button>
+                            <button class="action-btn active">
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Status Tags -->
+                    <div class="status-tags">
+                        <span class="tag normal">Normal <b>25</b></span>
+                        <span class="tag testing">Testing <b>7</b></span>
+                        <span class="tag lent">Lent <b>5</b></span>
+                        <span class="tag damage">Damage <b>3</b></span>
+                        <span class="tag loss">Loss <b>2</b></span>
+                        <span class="tag scrap">Scrap <b>4</b></span>
+                    </div>
+
+                    <!-- Stats Row -->
+                    <div class="stats-row">
+                        <div class="stats-card">
+                            <div class="stat-item">
+                                <span class="stat-label">Total</span>
+                                <span class="stat-value">40</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">Delay</span>
+                                <span class="stat-value delay">7</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">Detection</span>
+                                <span class="stat-value detection">3</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">Scrap</span>
+                                <span class="stat-value scrap-val">5</span>
+                            </div>
+                        </div>
+
+                        <div class="env-card">
+                            <i class="fas fa-tint"></i>
+                            <span>30%</span>
+                        </div>
+
+                        <div class="env-card">
+                            <i class="fas fa-thermometer-half"></i>
+                            <span>28°C</span>
+                        </div>
+
+                        <div class="control-buttons">
+                            <button class="control-btn door active">
+                                <div class="btn-icon">
+                                    <i class="fas fa-door-open"></i>
+                                </div>
+                                <div class="btn-info">
+                                    <span class="btn-label">Door</span>
+                                    <span class="btn-status">ON</span>
+                                </div>
+                            </button>
+                            <button class="control-btn light">
+                                <div class="btn-icon">
+                                    <i class="fas fa-lightbulb"></i>
+                                </div>
+                                <div class="btn-info">
+                                    <span class="btn-label">Light</span>
+                                    <span class="btn-status">OFF</span>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Case Section -->
+                    <div class="case-section">
+                        <div class="case-header">
+                            <h3>CASE 01</h3>
+                            <button class="nav-arrow">
+                                <i class="fas fa-chevron-right"></i>
+                            </button>
+                        </div>
+
+                        <div class="case-content">
+                            <!-- Shaft -->
+                            <div class="item-container">
+                                <div class="item-header">
+                                    <div class="item-icon shaft-icon">
+                                        <i class="fas fa-pen"></i>
+                                    </div>
+                                    <span class="item-title">Shaft</span>
+                                </div>
+                                <div class="item-grid">
+                                    <div class="item-card">
+                                        <span class="card-name">Shaft 1</span>
+                                        <div class="card-status">
+                                            <span class="status-text">Normal</span>
+                                            <span class="status-badge normal">8</span>
+                                        </div>
+                                    </div>
+                                    <div class="item-card">
+                                        <span class="card-name">Shaft 2</span>
+                                        <div class="card-status">
+                                            <span class="status-text">Lent</span>
+                                            <span class="status-badge lent">1</span>
+                                        </div>
+                                    </div>
+                                    <div class="item-card">
+                                        <span class="card-name">Shaft 3</span>
+                                        <div class="card-status">
+                                            <span class="status-text">Testing</span>
+                                            <span class="status-badge testing">2</span>
+                                        </div>
+                                    </div>
+                                    <div class="item-card">
+                                        <span class="card-name">Shaft 4</span>
+                                        <div class="card-status">
+                                            <span class="status-text">Scrap</span>
+                                            <span class="status-badge scrap">1</span>
+                                        </div>
+                                    </div>
+                                    <div class="item-card">
+                                        <span class="card-name">Shaft 5</span>
+                                        <div class="card-status">
+                                            <span class="status-text">Loss</span>
+                                            <span class="status-badge loss">1</span>
+                                        </div>
+                                    </div>
+                                    <div class="item-card">
+                                        <span class="card-name">Shaft 6</span>
+                                        <div class="card-status">
+                                            <span class="status-text">Damage</span>
+                                            <span class="status-badge damage">1</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Capacitive -->
+                            <div class="item-container">
+                                <div class="item-header">
+                                    <div class="item-icon capacitive-icon">
+                                        <i class="fas fa-bolt"></i>
+                                    </div>
+                                    <span class="item-title">Capacitive</span>
+                                </div>
+                                <div class="item-grid">
+                                    <div class="item-card">
+                                        <span class="card-name">Capacitive 1</span>
+                                        <div class="card-status">
+                                            <span class="status-text">Normal</span>
+                                            <span class="status-badge normal">3</span>
+                                        </div>
+                                    </div>
+                                    <div class="item-card">
+                                        <span class="card-name">Capacitive 2</span>
+                                        <div class="card-status">
+                                            <span class="status-text">Lent</span>
+                                            <span class="status-badge lent">1</span>
+                                        </div>
+                                    </div>
+                                    <div class="item-card">
+                                        <span class="card-name">Capacitive 3</span>
+                                        <div class="card-status">
+                                            <span class="status-text">Testing</span>
+                                            <span class="status-badge testing">1</span>
+                                        </div>
+                                    </div>
+                                    <div class="item-card">
+                                        <span class="card-name">Capacitive 4</span>
+                                        <div class="card-status">
+                                            <span class="status-text">Scrap</span>
+                                            <span class="status-badge scrap">1</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Insulating blanket -->
+                            <div class="item-container">
+                                <div class="item-header">
+                                    <div class="item-icon blanket-icon">
+                                        <i class="fas fa-th-large"></i>
+                                    </div>
+                                    <span class="item-title">Insulating blanket</span>
+                                </div>
+                                <div class="item-grid">
+                                    <div class="item-card">
+                                        <span class="card-name">Blanket 1</span>
+                                        <div class="card-status">
+                                            <span class="status-text">正常</span>
+                                            <span class="status-badge normal">10</span>
+                                        </div>
+                                    </div>
+                                    <div class="item-card">
+                                        <span class="card-name">Blanket 2</span>
+                                        <div class="card-status">
+                                            <span class="status-text">借出</span>
+                                            <span class="status-badge lent">1</span>
+                                        </div>
+                                    </div>
+                                    <div class="item-card">
+                                        <span class="card-name">Blanket 3</span>
+                                        <div class="card-status">
+                                            <span class="status-text">送检</span>
+                                            <span class="status-badge testing">2</span>
+                                        </div>
+                                    </div>
+                                    <div class="item-card">
+                                        <span class="card-name">Blanket 4</span>
+                                        <div class="card-status">
+                                            <span class="status-text">报废</span>
+                                            <span class="status-badge scrap">1</span>
+                                        </div>
+                                    </div>
+                                    <div class="item-card">
+                                        <span class="card-name">Blanket 5</span>
+                                        <div class="card-status">
+                                            <span class="status-text">丢失</span>
+                                            <span class="status-badge loss">1</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Pagination Dots -->
+                        <div class="pagination-dots">
+                            <span class="dot active"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Storage Box 2 -->
+                <section class="storage-section collapsed">
+                    <div class="section-header">
+                        <h2 class="section-title">NO.2 Storage box</h2>
+                        <div class="section-actions">
+                            <button class="action-btn">
+                                <i class="fas fa-filter"></i>
+                            </button>
+                            <button class="action-btn">
+                                <i class="fas fa-chevron-right"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Stats Row -->
+                    <div class="stats-row">
+                        <div class="stats-card">
+                            <div class="stat-item">
+                                <span class="stat-label">Total</span>
+                                <span class="stat-value">20</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">Delay</span>
+                                <span class="stat-value zero">0</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">Detection</span>
+                                <span class="stat-value zero">0</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">Scrap</span>
+                                <span class="stat-value zero">0</span>
+                            </div>
+                        </div>
+
+                        <div class="env-card">
+                            <i class="fas fa-tint"></i>
+                            <span>38%</span>
+                        </div>
+
+                        <div class="env-card">
+                            <i class="fas fa-thermometer-half"></i>
+                            <span>28°C</span>
+                        </div>
+
+                        <div class="control-buttons">
+                            <button class="control-btn door">
+                                <div class="btn-icon">
+                                    <i class="fas fa-door-closed"></i>
+                                </div>
+                                <div class="btn-info">
+                                    <span class="btn-label">Door</span>
+                                    <span class="btn-status">OFF</span>
+                                </div>
+                            </button>
+                            <button class="control-btn light active">
+                                <div class="btn-icon">
+                                    <i class="fas fa-lightbulb"></i>
+                                </div>
+                                <div class="btn-info">
+                                    <span class="btn-label">Light</span>
+                                    <span class="btn-status">ON</span>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Status Tags -->
+                    <div class="status-tags">
+                        <span class="tag normal">Normal <b>10</b></span>
+                        <span class="tag testing">Testing <b>1</b></span>
+                    </div>
+                </section>
+            </div>
+        </main>
     </div>
 </body>
 </html>
