@@ -80,320 +80,368 @@
             </header>
 
             <!-- Content Area -->
-            <div class="content-area">
-                <!-- Sensor 1 - Highlighted -->
-                <section class="sensor-section highlighted">
-                    <div class="section-header">
-                        <h2 class="section-title">SENSOR NO.1 Local Name</h2>
-                        <div class="section-actions">
-                            <button class="action-btn">
-                                <i class="fas fa-filter"></i>
-                            </button>
-                            <button class="action-btn active">
-                                <i class="fas fa-chevron-down"></i>
-                            </button>
-                        </div>
-                    </div>
-
-                    <!-- Status Tags -->
-                    <div class="status-tags">
-                        <span class="tag normal">Normal <b>25</b></span>
-                        <span class="tag testing">Testing <b>7</b></span>
-                        <span class="tag lent">Lent <b>5</b></span>
-                        <span class="tag damage">Damage <b>3</b></span>
-                        <span class="tag loss">Loss <b>2</b></span>
-                        <span class="tag scrap">Scrap <b>4</b></span>
-                    </div>
-
-                    <!-- Stats Row -->
-                    <div class="stats-row">
-                        <div class="stats-card">
-                            <div class="stat-item">
-                                <span class="stat-label">Total</span>
-                                <span class="stat-value">40</span>
-                            </div>
-                            <div class="stat-item">
-                                <span class="stat-label">Delay</span>
-                                <span class="stat-value delay">7</span>
-                            </div>
-                            <div class="stat-item">
-                                <span class="stat-label">Detection</span>
-                                <span class="stat-value detection">3</span>
-                            </div>
-                            <div class="stat-item">
-                                <span class="stat-label">Scrap</span>
-                                <span class="stat-value scrap-val">5</span>
+            <div class="content-area monitor-layout">
+                <!-- Left Column - Controls and Charts -->
+                <div class="monitor-left">
+                    <!-- Sensor Controls Card -->
+                    <div class="control-card">
+                        <!-- Sensor Tabs -->
+                        <div class="sensor-tabs-section">
+                            <span class="section-label">SENSOR</span>
+                            <div class="sensor-tabs">
+                                <button class="sensor-tab active">NO.1</button>
+                                <button class="sensor-tab">NO.2</button>
+                                <button class="sensor-tab">NO.3</button>
+                                <button class="sensor-tab">NO.4</button>
+                                <button class="sensor-tab">NO.5</button>
+                                <button class="sensor-tab">NO.6</button>
+                                <button class="sensor-tab add-btn">
+                                    <i class="fas fa-plus"></i>
+                                </button>
                             </div>
                         </div>
 
-                        <div class="env-card">
-                            <i class="fas fa-tint"></i>
-                            <span>30%</span>
-                        </div>
+                        <!-- Main Controls Grid -->
+                        <div class="controls-grid">
+                            <!-- Light Control -->
+                            <div class="control-group">
+                                <span class="control-label">LIGHT</span>
+                                <button class="toggle-btn off">
+                                    <i class="fas fa-lightbulb"></i>
+                                    <span>OFF</span>
+                                </button>
+                            </div>
 
-                        <div class="env-card">
-                            <i class="fas fa-thermometer-half"></i>
-                            <span>28°C</span>
-                        </div>
-
-                        <div class="control-buttons">
-                            <button class="control-btn door active">
-                                <div class="btn-icon">
+                            <!-- Door Control -->
+                            <div class="control-group">
+                                <span class="control-label">DOOR</span>
+                                <button class="toggle-btn on active">
                                     <i class="fas fa-door-open"></i>
-                                </div>
-                                <div class="btn-info">
-                                    <span class="btn-label">Door</span>
-                                    <span class="btn-status">ON</span>
-                                </div>
-                            </button>
-                            <button class="control-btn light">
-                                <div class="btn-icon">
+                                    <span>ON</span>
+                                </button>
+                            </div>
+
+                            <!-- Guiding Lamp -->
+                            <div class="control-group">
+                                <span class="control-label">GUIDING LAMP</span>
+                                <button class="toggle-btn off">
                                     <i class="fas fa-lightbulb"></i>
+                                    <span>OFF</span>
+                                </button>
+                            </div>
+
+                            <!-- Alarm -->
+                            <div class="control-group">
+                                <span class="control-label">ALARM</span>
+                                <button class="toggle-btn off">
+                                    <i class="fas fa-bell"></i>
+                                    <span>OFF</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Heater Control -->
+                        <div class="device-control heater-control">
+                            <div class="device-header">
+                                <span class="device-label">HEATER</span>
+                                <div class="heater-modes">
+                                    <button class="mode-btn active"><i class="fas fa-fire"></i></button>
+                                    <button class="mode-btn"><i class="fas fa-wind"></i></button>
+                                    <button class="mode-btn"><i class="fas fa-snowflake"></i></button>
                                 </div>
-                                <div class="btn-info">
-                                    <span class="btn-label">Light</span>
-                                    <span class="btn-status">OFF</span>
+                                <div class="toggle-switch small">
+                                    <input type="checkbox" id="heaterToggle" checked>
+                                    <label for="heaterToggle"><span class="toggle-text">ON</span></label>
                                 </div>
+                            </div>
+                            <div class="temp-control">
+                                <i class="fas fa-thermometer-half"></i>
+                                <span class="temp-value">25<sup>°C</sup></span>
+                                <button class="adjust-btn plus"><i class="fas fa-plus"></i></button>
+                                <button class="adjust-btn minus"><i class="fas fa-minus"></i></button>
+                            </div>
+                        </div>
+
+                        <!-- Early Warning Section -->
+                        <div class="device-control warning-control">
+                            <div class="device-header">
+                                <span class="device-label">EARLY WARNING</span>
+                            </div>
+                            <div class="warning-display">
+                                <div class="circular-gauge">
+                                    <div class="gauge-bg">
+                                        <svg viewBox="0 0 100 100" class="gauge-svg">
+                                            <circle class="gauge-track" cx="50" cy="50" r="35"/>
+                                            <circle class="gauge-progress" cx="50" cy="50" r="35"/>
+                                        </svg>
+                                        <div class="gauge-center">
+                                            <i class="fas fa-home"></i>
+                                        </div>
+                                    </div>
+                                    <div class="gauge-indicators">
+                                        <div class="indicator temp-indicator">
+                                            <i class="fas fa-thermometer-half"></i>
+                                            <span>26°C</span>
+                                        </div>
+                                        <div class="indicator humidity-indicator">
+                                            <i class="fas fa-tint"></i>
+                                            <span>53%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="warning-badges">
+                                    <div class="warning-badge hot">
+                                        <i class="fas fa-thermometer-full"></i>
+                                        <div class="badge-info">
+                                            <span class="badge-value">40°C</span>
+                                            <span class="badge-label">HOT</span>
+                                        </div>
+                                    </div>
+                                    <div class="warning-badge dry">
+                                        <i class="fas fa-tint-slash"></i>
+                                        <div class="badge-info">
+                                            <span class="badge-value">10%</span>
+                                            <span class="badge-label">DRY</span>
+                                        </div>
+                                    </div>
+                                    <div class="warning-badge open">
+                                        <i class="fas fa-door-open"></i>
+                                        <div class="badge-info">
+                                            <span class="badge-value">ON</span>
+                                            <span class="badge-label">OPEN</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Dehumidifier Control -->
+                        <div class="device-control dehumidifier-control">
+                            <div class="device-header">
+                                <span class="device-label">DEHUMIDIFIER</span>
+                                <div class="toggle-switch small">
+                                    <input type="checkbox" id="dehumidifierToggle" checked>
+                                    <label for="dehumidifierToggle"><span class="toggle-text">ON</span></label>
+                                </div>
+                            </div>
+                            <div class="temp-control">
+                                <i class="fas fa-tint"></i>
+                                <span class="temp-value">40<sup>%</sup></span>
+                                <button class="adjust-btn plus"><i class="fas fa-plus"></i></button>
+                                <button class="adjust-btn minus"><i class="fas fa-minus"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Charts Section -->
+                    <div class="charts-section">
+                        <!-- Monitoring Chart -->
+                        <div class="chart-card">
+                            <div class="chart-header">
+                                <i class="fas fa-check-circle"></i>
+                                <span>MONITORING</span>
+                                <div class="chart-legend">
+                                    <span class="legend-item"><i class="fas fa-circle" style="color: #F47780;"></i> Temp</span>
+                                    <span class="legend-item"><i class="fas fa-circle" style="color: #39A5ED;"></i> Wet</span>
+                                </div>
+                            </div>
+                            <div class="chart-wrapper">
+                                <canvas id="monitoringChart"></canvas>
+                            </div>
+                        </div>
+
+                        <!-- Equipment Chart -->
+                        <div class="chart-card">
+                            <div class="chart-header">
+                                <i class="fas fa-exclamation-triangle"></i>
+                                <span>EQUIPMENT</span>
+                                <div class="chart-legend">
+                                    <span class="legend-item"><i class="fas fa-circle" style="color: #F47780;"></i> Temp</span>
+                                    <span class="legend-item"><i class="fas fa-circle" style="color: #39A5ED;"></i> Wet</span>
+                                    <span class="legend-item"><i class="fas fa-circle" style="color: #333;"></i> Door</span>
+                                </div>
+                            </div>
+                            <div class="chart-wrapper">
+                                <canvas id="equipmentChart"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column - Location and Alarms -->
+                <div class="monitor-right">
+                    <!-- Location Card -->
+                    <div class="location-card">
+                        <div class="location-header">
+                            <span>LOCATION</span>
+                            <div class="location-toggle">
+                                <span class="toggle-label">OFF</span>
+                                <div class="toggle-switch">
+                                    <input type="checkbox" id="locationToggle">
+                                    <label for="locationToggle"></label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="map-container">
+                            <img src="https://api.mapbox.com/styles/v1/mapbox/light-v11/static/100.5018,13.7563,12,0/600x400@2x?access_token=pk.eyJ1IjoiZXhhbXBsZSIsImEiOiJjbGV4YW1wbGUifQ.example" alt="Map" class="map-image">
+                        </div>
+                        <div class="location-tabs">
+                            <button class="location-tab active">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Location</span>
+                            </button>
+                            <button class="location-tab">
+                                <i class="fas fa-globe"></i>
+                                <span>Geometry</span>
                             </button>
                         </div>
                     </div>
 
-                    <!-- Case Section -->
-                    <div class="case-section">
-                        <div class="case-header">
-                            <h3>CASE 01</h3>
-                            <button class="nav-arrow">
-                                <i class="fas fa-chevron-right"></i>
-                            </button>
+                    <!-- Alarm Section -->
+                    <div class="alarm-card">
+                        <div class="alarm-header">
+                            <span>ALARM</span>
                         </div>
-
-                        <div class="case-content">
-                            <!-- Shaft -->
-                            <div class="item-container">
-                                <div class="item-header">
-                                    <div class="item-icon shaft-icon">
-                                        <i class="fas fa-pen"></i>
-                                    </div>
-                                    <span class="item-title">Shaft</span>
-                                </div>
-                                <div class="item-grid">
-                                    <div class="item-card">
-                                        <span class="card-name">Shaft 1</span>
-                                        <div class="card-status">
-                                            <span class="status-text">Normal</span>
-                                            <span class="status-badge normal">8</span>
-                                        </div>
-                                    </div>
-                                    <div class="item-card">
-                                        <span class="card-name">Shaft 2</span>
-                                        <div class="card-status">
-                                            <span class="status-text">Lent</span>
-                                            <span class="status-badge lent">1</span>
-                                        </div>
-                                    </div>
-                                    <div class="item-card">
-                                        <span class="card-name">Shaft 3</span>
-                                        <div class="card-status">
-                                            <span class="status-text">Testing</span>
-                                            <span class="status-badge testing">2</span>
-                                        </div>
-                                    </div>
-                                    <div class="item-card">
-                                        <span class="card-name">Shaft 4</span>
-                                        <div class="card-status">
-                                            <span class="status-text">Scrap</span>
-                                            <span class="status-badge scrap">1</span>
-                                        </div>
-                                    </div>
-                                    <div class="item-card">
-                                        <span class="card-name">Shaft 5</span>
-                                        <div class="card-status">
-                                            <span class="status-text">Loss</span>
-                                            <span class="status-badge loss">1</span>
-                                        </div>
-                                    </div>
-                                    <div class="item-card">
-                                        <span class="card-name">Shaft 6</span>
-                                        <div class="card-status">
-                                            <span class="status-text">Damage</span>
-                                            <span class="status-badge damage">1</span>
-                                        </div>
-                                    </div>
-                                </div>
+                        <div class="alarm-grid">
+                            <div class="alarm-item">
+                                <span class="alarm-label">NO.1</span>
+                                <i class="fas fa-bell alarm-icon"></i>
+                                <span class="alarm-status normal">NORMAL</span>
                             </div>
-
-                            <!-- Capacitive -->
-                            <div class="item-container">
-                                <div class="item-header">
-                                    <div class="item-icon capacitive-icon">
-                                        <i class="fas fa-bolt"></i>
-                                    </div>
-                                    <span class="item-title">Capacitive</span>
-                                </div>
-                                <div class="item-grid">
-                                    <div class="item-card">
-                                        <span class="card-name">Capacitive 1</span>
-                                        <div class="card-status">
-                                            <span class="status-text">Normal</span>
-                                            <span class="status-badge normal">3</span>
-                                        </div>
-                                    </div>
-                                    <div class="item-card">
-                                        <span class="card-name">Capacitive 2</span>
-                                        <div class="card-status">
-                                            <span class="status-text">Lent</span>
-                                            <span class="status-badge lent">1</span>
-                                        </div>
-                                    </div>
-                                    <div class="item-card">
-                                        <span class="card-name">Capacitive 3</span>
-                                        <div class="card-status">
-                                            <span class="status-text">Testing</span>
-                                            <span class="status-badge testing">1</span>
-                                        </div>
-                                    </div>
-                                    <div class="item-card">
-                                        <span class="card-name">Capacitive 4</span>
-                                        <div class="card-status">
-                                            <span class="status-text">Scrap</span>
-                                            <span class="status-badge scrap">1</span>
-                                        </div>
-                                    </div>
-                                </div>
+                            <div class="alarm-item">
+                                <span class="alarm-label">NO.2</span>
+                                <i class="fas fa-bell alarm-icon hot"></i>
+                                <span class="alarm-status hot">HOT</span>
                             </div>
-
-                            <!-- Insulating blanket -->
-                            <div class="item-container">
-                                <div class="item-header">
-                                    <div class="item-icon blanket-icon">
-                                        <i class="fas fa-th-large"></i>
-                                    </div>
-                                    <span class="item-title">Insulating blanket</span>
-                                </div>
-                                <div class="item-grid">
-                                    <div class="item-card">
-                                        <span class="card-name">Blanket 1</span>
-                                        <div class="card-status">
-                                            <span class="status-text">正常</span>
-                                            <span class="status-badge normal">10</span>
-                                        </div>
-                                    </div>
-                                    <div class="item-card">
-                                        <span class="card-name">Blanket 2</span>
-                                        <div class="card-status">
-                                            <span class="status-text">借出</span>
-                                            <span class="status-badge lent">1</span>
-                                        </div>
-                                    </div>
-                                    <div class="item-card">
-                                        <span class="card-name">Blanket 3</span>
-                                        <div class="card-status">
-                                            <span class="status-text">送检</span>
-                                            <span class="status-badge testing">2</span>
-                                        </div>
-                                    </div>
-                                    <div class="item-card">
-                                        <span class="card-name">Blanket 4</span>
-                                        <div class="card-status">
-                                            <span class="status-text">报废</span>
-                                            <span class="status-badge scrap">1</span>
-                                        </div>
-                                    </div>
-                                    <div class="item-card">
-                                        <span class="card-name">Blanket 5</span>
-                                        <div class="card-status">
-                                            <span class="status-text">丢失</span>
-                                            <span class="status-badge loss">1</span>
-                                        </div>
-                                    </div>
-                                </div>
+                            <div class="alarm-item">
+                                <span class="alarm-label">NO.3</span>
+                                <i class="fas fa-bell alarm-icon dry"></i>
+                                <span class="alarm-status dry">DRY</span>
                             </div>
-                        </div>
-
-                        <!-- Pagination Dots -->
-                        <div class="pagination-dots">
-                            <span class="dot active"></span>
-                            <span class="dot"></span>
-                            <span class="dot"></span>
-                        </div>
-                    </div>
-                </section>
-
-                <!-- Sensor 2 - Normal -->
-                <section class="sensor-section">
-                    <div class="section-header">
-                        <h2 class="section-title">SENSOR NO.2 Local Name</h2>
-                        <div class="section-actions">
-                            <button class="action-btn">
-                                <i class="fas fa-filter"></i>
-                            </button>
-                            <button class="action-btn">
-                                <i class="fas fa-chevron-right"></i>
-                            </button>
+                            <div class="alarm-item">
+                                <span class="alarm-label">NO.4</span>
+                                <i class="fas fa-bell alarm-icon open"></i>
+                                <span class="alarm-status open">OPEN</span>
+                            </div>
+                            <div class="alarm-item">
+                                <span class="alarm-label">NO.5</span>
+                                <i class="fas fa-bell alarm-icon open"></i>
+                                <span class="alarm-status open">OPEN</span>
+                            </div>
+                            <div class="alarm-item">
+                                <span class="alarm-label">NO.6</span>
+                                <i class="fas fa-bell alarm-icon open"></i>
+                                <span class="alarm-status open">OPEN</span>
+                            </div>
                         </div>
                     </div>
 
-                    <!-- Stats Row -->
-                    <div class="stats-row">
-                        <div class="stats-card">
-                            <div class="stat-item">
-                                <span class="stat-label">Total</span>
-                                <span class="stat-value">20</span>
-                            </div>
-                            <div class="stat-item">
-                                <span class="stat-label">Delay</span>
-                                <span class="stat-value zero">0</span>
-                            </div>
-                            <div class="stat-item">
-                                <span class="stat-label">Detection</span>
-                                <span class="stat-value zero">0</span>
-                            </div>
-                            <div class="stat-item">
-                                <span class="stat-label">Scrap</span>
-                                <span class="stat-value zero">0</span>
-                            </div>
+                    <!-- All Sensors Summary -->
+                    <div class="all-sensors-card">
+                        <div class="all-sensors-header">
+                            <span>ALL</span>
                         </div>
-
-                        <div class="env-card">
-                            <i class="fas fa-tint"></i>
-                            <span>38%</span>
-                        </div>
-
-                        <div class="env-card">
-                            <i class="fas fa-thermometer-half"></i>
-                            <span>28°C</span>
-                        </div>
-
-                        <div class="control-buttons">
-                            <button class="control-btn door">
-                                <div class="btn-icon">
-                                    <i class="fas fa-door-closed"></i>
+                        <div class="sensor-summary-list">
+                            <div class="sensor-summary">
+                                <div class="summary-left">
+                                    <i class="fas fa-bars"></i>
+                                    <span class="summary-label">NO.1</span>
                                 </div>
-                                <div class="btn-info">
-                                    <span class="btn-label">Door</span>
-                                    <span class="btn-status">OFF</span>
+                                <div class="summary-middle">
+                                    <span class="summary-stat"><i class="fas fa-tint"></i> 63%</span>
+                                    <span class="summary-stat"><i class="fas fa-thermometer-half"></i> 26°C</span>
                                 </div>
-                            </button>
-                            <button class="control-btn light active">
-                                <div class="btn-icon">
-                                    <i class="fas fa-lightbulb"></i>
+                                <span class="summary-status open">OPEN</span>
+                            </div>
+                            <div class="sensor-summary">
+                                <div class="summary-left">
+                                    <i class="fas fa-bars"></i>
+                                    <span class="summary-label">NO.2</span>
                                 </div>
-                                <div class="btn-info">
-                                    <span class="btn-label">Light</span>
-                                    <span class="btn-status">ON</span>
+                                <div class="summary-middle">
+                                    <span class="summary-stat"><i class="fas fa-tint"></i> 43%</span>
+                                    <span class="summary-stat"><i class="fas fa-thermometer-half"></i> 28°C</span>
                                 </div>
-                            </button>
+                                <span class="summary-status normal">NORMAL</span>
+                            </div>
                         </div>
                     </div>
-
-                    <!-- Status Tags -->
-                    <div class="status-tags">
-                        <span class="tag normal">Normal <b>10</b></span>
-                        <span class="tag testing">Testing <b>1</b></span>
-                    </div>
-                </section>
+                </div>
             </div>
         </main>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+    <script>
+        // Monitoring Chart
+        const monitoringCtx = document.getElementById('monitoringChart');
+        if (monitoringCtx) {
+            new Chart(monitoringCtx, {
+                type: 'line',
+                data: {
+                    labels: ['2022.01', '2022.02', '2022.03'],
+                    datasets: [{
+                        label: 'Temp',
+                        data: [12, 15, 18, 17, 19, 20],
+                        borderColor: '#F47780',
+                        backgroundColor: 'rgba(244, 119, 128, 0.1)',
+                        fill: true,
+                        tension: 0.4
+                    }, {
+                        label: 'Wet',
+                        data: [50, 52, 51, 53, 54, 55],
+                        borderColor: '#39A5ED',
+                        backgroundColor: 'rgba(57, 165, 237, 0.1)',
+                        fill: true,
+                        tension: 0.4
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: { display: false }
+                    },
+                    scales: {
+                        y: { beginAtZero: true }
+                    }
+                }
+            });
+        }
+
+        // Equipment Chart
+        const equipmentCtx = document.getElementById('equipmentChart');
+        if (equipmentCtx) {
+            new Chart(equipmentCtx, {
+                type: 'bar',
+                data: {
+                    labels: ['03.24', '03.25', '03.26', '03.27', '03.28'],
+                    datasets: [{
+                        label: 'Temp',
+                        data: [45, 55, 50, 60, 65],
+                        backgroundColor: '#F47780'
+                    }, {
+                        label: 'Wet',
+                        data: [70, 90, 75, 85, 80],
+                        backgroundColor: '#39A5ED'
+                    }, {
+                        label: 'Door',
+                        data: [20, 30, 25, 35, 40],
+                        backgroundColor: '#333'
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: { display: false }
+                    },
+                    scales: {
+                        y: { beginAtZero: true, max: 90 }
+                    }
+                }
+            });
+        }
+    </script>
 </body>
 </html>
