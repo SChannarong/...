@@ -108,14 +108,14 @@
                                 <span class="control-label">LIGHT</span>
                                 <button class="toggle-btn off">
                                     <i class="fas fa-lightbulb"></i>
-                                    <span>OFF</span>
                                 </button>
+                                <span class="control-status">OFF</span>
                             </div>
 
                             <!-- Door Control -->
                             <div class="control-group">
                                 <span class="control-label">DOOR</span>
-                                <button class="toggle-btn on active">
+                                <button class="pill-btn on">
                                     <i class="fas fa-door-open"></i>
                                     <span>ON</span>
                                 </button>
@@ -126,8 +126,8 @@
                                 <span class="control-label">GUIDING LAMP</span>
                                 <button class="toggle-btn off">
                                     <i class="fas fa-lightbulb"></i>
-                                    <span>OFF</span>
                                 </button>
+                                <span class="control-status">OFF</span>
                             </div>
 
                             <!-- Alarm -->
@@ -135,8 +135,8 @@
                                 <span class="control-label">ALARM</span>
                                 <button class="toggle-btn off">
                                     <i class="fas fa-bell"></i>
-                                    <span>OFF</span>
                                 </button>
+                                <span class="control-status">OFF</span>
                             </div>
                         </div>
 
@@ -177,39 +177,31 @@
                                         <div class="gauge-center">
                                             <i class="fas fa-home"></i>
                                         </div>
-                                    </div>
-                                    <div class="gauge-indicators">
-                                        <div class="indicator temp-indicator">
-                                            <i class="fas fa-thermometer-half"></i>
-                                            <span>26°C</span>
+                                        <div class="gauge-temp-badge">
+                                            <i class="fas fa-droplet"></i>
+                                            <span>25°C</span>
                                         </div>
-                                        <div class="indicator humidity-indicator">
+                                        <div class="gauge-humidity-badge">
                                             <i class="fas fa-tint"></i>
                                             <span>53%</span>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="warning-badges">
-                                    <div class="warning-badge hot">
-                                        <i class="fas fa-thermometer-full"></i>
-                                        <div class="badge-info">
-                                            <span class="badge-value">40°C</span>
-                                            <span class="badge-label">HOT</span>
-                                        </div>
+                                    <div class="warning-status-item">
+                                        <i class="fas fa-fire status-icon hot"></i>
+                                        <span class="status-value">40°C</span>
+                                        <span class="status-badge hot">HOT</span>
                                     </div>
-                                    <div class="warning-badge dry">
-                                        <i class="fas fa-tint-slash"></i>
-                                        <div class="badge-info">
-                                            <span class="badge-value">10%</span>
-                                            <span class="badge-label">DRY</span>
-                                        </div>
+                                    <div class="warning-status-item">
+                                        <i class="fas fa-tint status-icon dry"></i>
+                                        <span class="status-value">10%</span>
+                                        <span class="status-badge dry">DRY</span>
                                     </div>
-                                    <div class="warning-badge open">
-                                        <i class="fas fa-door-open"></i>
-                                        <div class="badge-info">
-                                            <span class="badge-value">ON</span>
-                                            <span class="badge-label">OPEN</span>
-                                        </div>
+                                    <div class="warning-status-item">
+                                        <i class="fas fa-door-open status-icon open"></i>
+                                        <span class="status-value">ON</span>
+                                        <span class="status-badge open">OPEN</span>
                                     </div>
                                 </div>
                             </div>
@@ -276,7 +268,7 @@
                             <span>LOCATION</span>
                             <div class="location-toggle">
                                 <span class="toggle-label">OFF</span>
-                                <div class="toggle-switch">
+                                <div class="toggle-switch small">
                                     <input type="checkbox" id="locationToggle">
                                     <label for="locationToggle"></label>
                                 </div>
